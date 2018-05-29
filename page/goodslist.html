@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>扫罗家族办公室</title>
+	<meta name="description" content="网站描述">
+	<meta name="robots" content="noindex, nofollow">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" type="text/css" href="../css/rest.css" />
+	<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" type="../text/css" href="css/home.css" />
+	<link rel="stylesheet" type="text/css" href="../css/newStyle.css" />
+	<link rel="stylesheet" type="text/css" href="../css/icon/iconfont.css" />
+	<script src="../js/vendor/jquery-2.2.4.min.js"></script>
+	<script src="../js/vendor/bootstrap.min.js"></script>
+	<script src="../js/plugins.js"></script>
+	<script src="../js/tool.js"></script>
+	<script src="../laydate/laydate.js" type="text/javascript" charset="utf-8"></script>
+	<style type="text/css">
+		body {
+			background: #fff;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="tab-pane active">
+		<div class="panel-heading home_title">
+			<h3>兑换产品</h3>
+		</div>
+		<hr />
+		<!-- <div class="slb-date">
+				<div class="form-group slb-date-two" style="margin-bottom: 0px;">
+					<input type="text" class="form-control" id="test1" placeholder="请选择起止日期">
+				</div>
+				<div class="slb-date-btn">
+					<button type="submit" class="btn btn-primary">搜索</button>
+				</div>
+			</div> -->
+		<!--<button type="button" class="btn btn-info">（一般信息）Info</button>-->
+		<div>
+			<div class="add-btn">
+				<button type="button" class="btn btn-default" aria-label="Left Align" id="addBtn">
+					<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+				</button>
+				<button type="button" class="btn btn-default" aria-label="Left Align">
+					<span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+				</button>
+				<button type="button" class="btn btn-default" aria-label="Left Align">
+					<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+				</button>
+			</div>
+		</div>
+		<div class="panel-body goods-list">
+			<table class="table table-bordered table-striped table-hover">
+				<thead>
+					<tr>
+						<th>序号</th>
+						<th>名称</th>
+						<th>扫罗币</th>
+						<th>剩余数量</th>
+						<th>状态</th>
+						<th>序号</th>
+						<th>备注</th>
+					</tr>
+				</thead>
+				<tbody id="listContent">
+					<tr>
+						<td>1</td>
+						<td>2010-05024</td>
+						<td>test</td>
+						<td>14566565567</td>
+						<td>10.00</td>
+						<td>4500</td>
+						<td>message</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>2010-05024</td>
+						<td>test</td>
+						<td>14566565567</td>
+						<td>10.00</td>
+						<td>4500</td>
+						<td>message</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>2010-05024</td>
+						<td>test</td>
+						<td>14566565567</td>
+						<td>10.00</td>
+						<td>4500</td>
+						<td>message</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>2010-05024</td>
+						<td>test</td>
+						<td>14566565567</td>
+						<td>10.00</td>
+						<td>4500</td>
+						<td>message</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="8">
+							<ul class="pagination">
+								<li>
+									<a href="#">«</a>
+								</li>
+								<li>
+									<a href="#">1</a>
+								</li>
+								<li>
+									<a href="#">2</a>
+								</li>
+								<li>
+									<a href="#">3</a>
+								</li>
+								<li>
+									<a href="#">4</a>
+								</li>
+								<li>
+									<a href="#">5</a>
+								</li>
+								<li>
+									<a href="#">»</a>
+								</li>
+							</ul>
+						</td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+	</div>
+	<div class="add-content">
+		<div class="add-list">
+			<ul>
+				<li>
+					<div class="form-group">
+						<label for="goodsName">商品名称</label>
+						<input type="text" class="form-control" id="goodsName" placeholder="请输入">
+					</div>
+					<div class="form-group">
+						<label for="numberOne">价值</label>
+						<input type="text" class="form-control" id="numberOne" placeholder="请输入">
+					</div>
+					<div class="form-group">
+						<label for="slbMuch">扫罗币数</label>
+						<input type="text" class="form-control" id="slbMuch" placeholder="请输入">
+					</div>
+					<div class="form-group">
+						<label for="syMuch">剩余数量</label>
+						<input type="text" class="form-control" id="syMuch" placeholder="请输入">
+					</div>
+					<div class="form-group">
+						<label for="zhuantai">当前状态</label>
+						<input type="text" class="form-control" id="zhuantai" placeholder="请输入">
+					</div>
+					
+					<div class="form-group">
+						<label for="message">备注</label>
+						<input type="text" class="form-control" id="message" placeholder="请输入">
+					</div>
+					<div class="form-group">
+						<label for="image">图片</label>
+						<input type="file" class="form-control" id="image">
+					</div>
+					<div class="up-load-img">
+						<img src="" />
+					</div>
+					<div class="up-load-btn">
+						<button type="button" class="btn btn-primary" id="add-list-btn">确定</button>
+
+						<!-- Indicates a successful or positive action -->
+						<button type="button" class="btn btn-success">取消</button>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+
+<!--<script src="../js/index.js" type="text/javascript" charset="utf-8"></script>-->
+<script type="text/javascript">
+	laydate.render({
+		elem: '#test1',
+		range: true
+	});
+	$("#listContent tr").click(function () {
+		$("#listContent tr").removeClass("success")
+		$(this).addClass("success")
+	})
+	//		增加内容的函数
+	$("#addBtn").click(function () {
+		$('.add-content').show()
+	})
+	//确认增加按钮
+	$('#add-list-btn').click(function(){
+		$('.add-content').hide()
+	})
+</script>
+
+</html>

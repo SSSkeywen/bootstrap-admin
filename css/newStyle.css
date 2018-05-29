@@ -1,0 +1,131 @@
+.tab-content {
+	width: 100%;
+	height: calc(100% - 50px);
+	overflow: hidden;
+}
+
+.tab-content iframe {
+	width: 100%;
+	height: 750px;
+}
+
+.home_title {
+	padding: 0;
+}
+
+.home_title h3 {
+	margin: 0;
+}
+
+
+/*扫罗币发行页面*/
+
+.slb_title {
+	display: flex;
+	display: -webkit-flex;
+}
+
+.slb-one {
+	margin-right: 5px;
+}
+
+.slb-three p {
+	line-height: 32px;
+	margin-left: 20px;
+	margin-bottom: 15px;
+}
+
+.slb-three p span {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.slb-select .slb-one {
+	width: 200px;
+}
+
+.slb-select .slb-much {
+	display: flex;
+	line-height: 34px;
+}
+.slb-date{
+	display: flex;
+	display: -webkit-flex;
+}
+.slb-date .slb-date-two{
+	width: 250px;
+}
+.slb-date .slb-date-btn{
+	width: 250px;
+	    margin-left: 10px;
+}
+.slb-date .slb-date-btn button{
+	width: 100px;
+}
+.panel-body {
+    padding: 15px 15px 15px 0;
+}
+
+/*商品兑换页面*/
+.add-btn{
+	display: flex;
+	display: -webkit-flex;
+	justify-content: flex-end;
+	-webkit-justify-content: flex-end;
+	padding-right: 15px;
+}
+.goods-list{
+	padding-top: 0px;
+}
+.add-content{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background-color: rgba(0,0,0,.8);
+	display: none;
+}
+.add-list{
+	    width: 40%;
+    height: 90%;
+    background-color: #fff;
+    top: 5%;
+    position: absolute;
+    left: 10%;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid;
+}
+.add-list ul{
+	padding-left: 0px;
+}
+.add-list ul li .form-group{
+	display: flex;
+    line-height: 36px;
+}
+.add-list ul li .form-group input{
+	    width: 80%;
+    margin-left: 20px;
+}
+.add-list ul li .form-group label{
+	width: 60px;
+}
+.up-load-img{
+	    width: 150px;
+    height: 150px;
+    padding-left: 100px;
+}
+.up-load-img img{
+	    display: block;
+    width: 150px;
+    height: 150px;
+}
+.up-load-btn{
+	width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+.up-load-btn button{
+	width: 35%;
+}
