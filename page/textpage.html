@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>扫罗家族办公室</title>
+	<meta name="description" content="网站描述">
+	<meta name="robots" content="noindex, nofollow">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" type="text/css" href="../css/rest.css" />
+	<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" type="../text/css" href="css/home.css" />
+	<link rel="stylesheet" type="text/css" href="../css/newStyle.css" />
+	<link rel="stylesheet" type="text/css" href="../css/icon/iconfont.css" />
+	<script src="../js/vendor/jquery-2.2.4.min.js"></script>
+	<script src="../js/vendor/bootstrap.min.js"></script>
+	<script src="../js/plugins.js"></script>
+	<script src="../js/tool.js"></script>
+	<script src="../laydate/laydate.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/wangEditor.min.js"></script>
+	<style type="text/css">
+		body {
+			background: #fff;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="tab-pane active">
+		<div class="panel-heading home_title">
+			<h3>推荐文章详情</h3>
+		</div>
+		<hr />
+		<div>
+			<div class="text-top">
+				<div class="form-group text-one">
+					<label for="exampleInputName2">类型</label>
+					<input type="text" class="form-control" id="exampleInputName2" placeholder="请输入">
+				</div>
+				<div class="form-group text-one">
+					<label for="exampleInputName3">地址</label>
+					<input type="text" class="form-control" id="exampleInputName3" placeholder="请输入">
+				</div>
+				<div class="form-group text-one">
+					<label for="exampleInputName4">回报率</label>
+					<input type="text" class="form-control" id="exampleInputName4" placeholder="请输入">
+				</div>
+			</div>
+			<p style="    margin-bottom: 0;font-size: 20px;color: #555;">轮播图</p>
+			<div class="upload-img">
+				<div class="upload-img-content">
+					<p>
+						<input type="file">
+					</p>
+					<div>
+						<img src="" alt="">
+					</div>
+				</div>
+				<div class="upload-img-content">
+					<p>
+						<input type="file">
+					</p>
+					<div>
+						<img src="" alt="">
+					</div>
+				</div>
+				<div class="upload-img-content">
+					<p>
+						<input type="file">
+					</p>
+					<div>
+						<img src="" alt="">
+					</div>
+				</div>
+			</div>
+			<div id="editor">
+				<p>请输入</p>
+			</div>
+			<p class="text-btn">
+				<button type="button" id="btn1"class="btn btn-primary btn-lg">确认</button>
+				<button type="button" class="btn btn-default btn-lg">取消</button>
+			</p>
+		</div>
+	</div>
+	<div class="alert alert-warning alert-dismissible alert-styele" role="alert">
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		</button>
+		<strong>警告!</strong> 请输入类型地址和回报率！
+	</div>
+</body>
+
+<script type="text/javascript">
+	var E = window.wangEditor
+	var editor = new E('#editor')
+	// 或者 var editor = new E( document.getElementById('editor') )
+	// editor.customConfig.uploadImgServer = '/upload'
+	editor.customConfig.uploadImgShowBase64 = true   // 使用 base64 保存图片
+	// editor.customConfig.showLinkImg = false
+	editor.create()
+
+	document.getElementById('btn1').addEventListener('click', function () {
+        // 读取 html
+        alert(editor.txt.html())
+    }, false)
+
+    // document.getElementById('btn2').addEventListener('click', function () {
+    //     // 读取 text
+    //     alert(editor.txt.text())
+    // }, false)
+	
+	
+
+</script>
+
+</html>

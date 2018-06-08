@@ -129,3 +129,49 @@
 .up-load-btn button{
 	width: 35%;
 }
+
+.text-top{
+	display: flex;
+}
+.text-top .text-one{
+		display: flex;
+		display: -webkit-flex;
+	line-height: 32px;
+	margin-left: 15px;
+}
+.text-top .text-one input{
+	width: 160px;
+	margin-left: 10px;
+}
+.text-btn{
+	margin-top: 15px;
+}
+.text-btn button{
+	width: 150px;
+}
+.alert-styele{
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.upload-img{
+	width: 100%;
+	display: flex;
+	display: -webkit-flex;
+	margin-bottom: 15px;
+}
+.upload-img-content{
+	width: 33%;
+    height: 150px;
+    border: 1px solid #dcdcdc;
+    padding: 0 15px 15px;
+    box-sizing: border-box;
+}
+.upload-img-content>p{
+	margin-bottom: 5px;
+}
+.upload-img-content>p>input{
+	line-height: 15px;
+}

@@ -562,6 +562,9 @@ a.sidebar-title:focus {
     font-size: 14px;
     text-align: center;
 }
+.sidebar-nav a>.glyphicon{
+    margin-right: 10px;
+}
 
 .sidebar-nav a > .sidebar-nav-indicator {
     float: right;

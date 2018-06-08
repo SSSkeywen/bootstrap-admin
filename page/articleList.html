@@ -49,9 +49,9 @@
 		<!--<button type="button" class="btn btn-info">（一般信息）Info</button>-->
 		<div>
 			<div class="add-btn">
-				<button type="button" class="btn btn-default" aria-label="Left Align" id="addBtn">
+				<a href="../page/textpage.html"><button type="button" class="btn btn-default" aria-label="Left Align">
 					<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-				</button>
+				</button></a>
 				<button type="button" class="btn btn-default" aria-label="Left Align">
 					<span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
 				</button>
@@ -70,7 +70,7 @@
 						<th>地址</th>
 						<th>回报率</th>
 						<th>发布时间</th>
-						<th>备注</th>
+						<th>是否发布</th>
 					</tr>
 				</thead>
 				<tbody id="listContent">
@@ -81,7 +81,9 @@
 						<td>加拿大</td>
 						<td>回报率</td>
 						<td>2018-01-01</td>
-						<td>message</td>
+						<td>
+							<button type="button" class="btn btn-info">发布</button>
+						</td>
 					</tr>
 					<tr>
 						<td>1</td>
@@ -90,7 +92,9 @@
 						<td>14566565567</td>
 						<td>10.00</td>
 						<td>4500</td>
-						<td>message</td>
+						<td>
+							<button type="button" class="btn btn-info">发布</button>
+						</td>
 					</tr>
 					<tr>
 						<td>1</td>
@@ -99,7 +103,7 @@
 						<td>14566565567</td>
 						<td>10.00</td>
 						<td>4500</td>
-						<td>message</td>
+						<td><button type="button" class="btn btn-info">发布</button></td>
 					</tr>
 					<tr>
 						<td>1</td>
@@ -108,7 +112,7 @@
 						<td>14566565567</td>
 						<td>10.00</td>
 						<td>4500</td>
-						<td>message</td>
+						<td><button type="button" class="btn btn-info">发布</button></td>
 					</tr>
 				</tbody>
 				<tfoot>
@@ -169,6 +173,7 @@
 	//		增加内容的函数
 	$("#addBtn").click(function () {
 		$('.add-content').show()
+		
 	})
 	//确认增加按钮
 	$('#add-list-btn').click(function(){
